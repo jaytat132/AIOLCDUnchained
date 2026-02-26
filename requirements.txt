@@ -1,0 +1,12 @@
+auto-py-to-exe>=2.39.0
+hidapi>=0.13.1
+libusb-package>=1.0.26.1
+maturin>=1.2.3
+mss>=9.0.1
+Pillow>=10.0.1
+psutil>=5.9.5
+pyinstaller>=5.11.0
+pystray>=0.19.4
+pythonnet>=3.0.3
+requests>=2.31.0
+WinUsbCDC==1.5

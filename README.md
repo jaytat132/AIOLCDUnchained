@@ -2,7 +2,7 @@
 
 WARNING: i'm not responsible for any damage to your equipment. If anything get stuck your best option is to turn off your pc and disconnect it from power for a minute or two before restarting it.
 
-This is a fork of [Marco Massarotto's](https://github.com/brokenmass/AIOLCDUnchained) with the introduction of gif support as well as cpu/gpu temperature monitoring
+This is a fork of [Marco Massarotto's](https://github.com/brokenmass/AIOLCDUnchained) SignalRGB extension with the introduction of gif support as well as cpu/gpu temperature monitoring
 
 ## Installation
 

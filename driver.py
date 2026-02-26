@@ -470,6 +470,9 @@ class KrakenLCD:
 
         self.bulkWrite(gifData)
 
+        # Drain stale HID messages that accumulated during the bulk transfer
+        self.clear()
+
         self.write([0x36, 0x02])
         status = self.readUntil({b"\x37\x02": self.parseStandardResult})
         debugUsb(self.formatStandardResult("End writeQ565", 0, status))

@@ -773,8 +773,12 @@ class FrameWriterWithStats(FrameWriter):
     def onFrame(self):
         (frame, rawTime, gifTime) = self.frameBuffer.get()
         startTime = time.time()
-        with lcd_lock:
-            self.lcd.writeFrame(frame)
+        try:
+            with lcd_lock:
+                self.lcd.writeFrame(frame)
+        except Exception as e:
+            print(f"[FrameWriter] Write failed (will retry): {e}")
+            return
         writeTime = time.time() - startTime
         freeTime = rawTime - writeTime
         from utils import debug
